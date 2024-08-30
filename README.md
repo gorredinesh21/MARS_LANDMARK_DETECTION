@@ -58,3 +58,51 @@ Access the architecture.json file to create a model with the same architecture.
 The architecture is also available in the model.ipynb file.
 After creating the model, load the weights from the my_model.weights.h5 file.
 Use the model to predict the landmark in an input image by calling the prediction function with the image path.
+
+
+## Dataset
+
+The dataset consists of:
+
+- 8,200 training images
+- 2,000 testing images
+
+The images depict various landmarks on Mars, categorized into eight classes.
+
+## Model Architecture
+
+The deep learning model architecture used for this project comprises:
+
+- **Convolutional Base**: VGG16 with pre-trained weights from ImageNet.
+- **Flatten Layer**: To convert the 2D matrix into a 1D vector.
+- **Dense Layers**:
+  - 256 units with ReLU activation
+  - 128 units with ReLU activation
+  - 8 output units with softmax activation for classification.
+
+## Results
+
+After training the model, it achieved an accuracy of 88% on the training dataset.
+
+## Sample Images
+
+The project includes a directory named `test`, which contains sample images that users can use to test the model's performance. Users can input these images into the model to obtain predictions of the corresponding landmarks.
+
+## Contributing
+
+Contributions to this project are welcome. You can contribute by:
+
+- Adding more training data
+- Experimenting with different model architectures
+- Enhancing the existing codebase
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+Special thanks to contributors who participated in this project.
+
+For any questions or concerns, please contact your-email@example.com.
+
