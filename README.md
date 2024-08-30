@@ -39,3 +39,22 @@ The exploration of Mars has become a significant area of interest for scientists
 
    ```bash
    git clone [repository-url]
+
+2. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+## Usage
+
+3. Open and run the `model.ipynb` notebook in Jupyter Notebook:
+
+   ```bash
+   jupyter notebook model.ipynb
+Follow the instructions in the notebook to train the model and evaluate its performance.
+
+To use the model:
+
+Access the architecture.json file to create a model with the same architecture. 
+The architecture is also available in the model.ipynb file.
+After creating the model, load the weights from the my_model.weights.h5 file.
+Use the model to predict the landmark in an input image by calling the prediction function with the image path.
